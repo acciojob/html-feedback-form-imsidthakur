@@ -4,52 +4,41 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	    <title>Form</title>
+
 </head>
 
 <body>
-	<table border="1" cellpadding="5" cellspacing="0">
-		<thead>
-			<tr>
-				<th>Element</th>
-				<th>ID</th>
-				<th>Type</th>
-				<th>Attributes</th>
-				<th>Label Required</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr style="background-color:#f6f8fa">
-				<td>Name</td>
-				<td>name</td>
-				<td>Text</td>
-				<td>minlength="3", maxlength="50", required</td>
-				<td>Yes</td>
-			</tr>
-			<tr >
-				<td>Portfolio</td>
-				<td>portfolio</td>
-				<td>URL</td>
-				<td>required</td>
-				<td>Yes</td>
-			</tr>
-				</tr>
-			<tr style="background-color:#f6f8fa">
-				<td>Favorite Color</td>
-				<td>favColor</td>
-				<td>Color</td>
-				<td>N/A	</td>
-				<td>Yes</td>
-			</tr>
-				</tr>
-			<tr>
-				<td>Likeness</td>
-				<td>likeness</td>
-				<td>Range</td>
-				<td>min="1", max="100"</td>
-				<td>Yes</td>
-			</tr>
-		</tbody>
-	</table>
+   <form action="#" method="post">
+        <!-- Name field -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+        </div>
+        
+        <!-- Portfolio field -->
+        <div>
+            <label for="portfolio">Portfolio:</label>
+            <input type="url" id="portfolio" name="portfolio" required>
+        </div>
+        
+        <!-- Favorite Color field -->
+        <div>
+            <label for="favColor">Favorite Color:</label>
+            <input type="color" id="favColor" name="favColor" required>
+        </div>
+        
+        <!-- Likeness field -->
+        <div>
+            <label for="likeness">Likeness:</label>
+            <input type="range" id="likeness" name="likeness" min="1" max="100">
+        </div>
+        
+        <!-- Submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
